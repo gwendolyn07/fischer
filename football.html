@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title> UR-Football </title>
+		<link rel="stylesheet" type= "text/css" href="css/cssHome.css">
+
+	</head>
+
+	 <blackBar>
+        </blackBar>
+        <blueBar>
+        </bluebar>
+
+	<h3> 
+		<input type="button" value="Log Out" class="LOButton" onclick="signIn()">
+	 </h3>
+
+	<header>
+               <div class = "logo">
+	                <img src="images/logo.png">
+               </div>
+
+                <br>
+
+                <div class="topnav" id="myTopnav2">
+                       <a href="homepage.html">Home</a>
+                       <a href="football.html">Football</a>
+                       <a href="#Basketball">Basketball</a>
+                       <a href="#Track">Track</a>
+                       <a href="#Volleyball">Volleyball</a>
+			<a href="#Baseball">Baseball</a>
+			<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="relativeNav()">&#9776;</a>
+                </div>
+
+		<script src="js/main.js"></script>
+                <script>
+                        function relativeNav() {
+                                var x = document.getElementById("myTopnav");
+                                if(x.className === "topnav") {
+                                        x.className += " responsive";
+                                } else {
+                                        x.className = "topnav";
+                                }
+                        }
+                </script>
+
+	</header>
+
+        <body>
+		<h1> Search for Players </h1>
+
+		<!-- ------------------Search by Region------------- -->
+		<div class="blackArkContainer">Select Region</div>
+
+		<br>
+
+		<div class="blackContainer">
+			
+			<div class="mapDesc">
+				<br>
+				<h2 id="desc">Region </h2>
+				<br>
+			</div>
+
+			<img src="images/TexasEdit.png" width="678" height="572" border="0" usemap="#map" NAME="emp" />
+
+			<map name="map">
+				<area shape="poly" coords="196,10,345,10,345,121,321,121,320,147,346,147,346,168,293,169,294,191,195,191,197,108" onmouseover="imageDesc('High Plains', 'images/highplainsMap.png')" onmouseout="imageDesc('Region','images/TexasEdit.png')" href="highPlains.Html" />
+				<area shape="poly" coords="195,194,287,194,287,239,334,239,334,266,361,266,364,272,368,271,372,274,375,273,380,275,385,272,390,272,391,300,397,300,398,319,382,319,381,321,380,331,257,331,258,356,236,355,219,344,142,287,146,244,195,244" onmouseover="imageDesc('West Texas','images/westTexasMap.png')" onmouseout="imageDesc('Region','images/TexasEdit.png')" href="westTexas.html" />
+				<area shape="poly" coords="143,244,140,290,228,352,225,357,221,356,215,358,212,359,204,370,204,376,200,380,200,387,196,386,189,396,188,397,182,396,179,394,175,393,170,390,169,388,164,388,157,383,158,382,152,382,146,381,135,372,134,371,131,370,126,368,119,360,120,356,117,354,113,350,113,336,111,331,104,323,102,315,96,309,93,308,82,301,62,288,42,270,23,252,15,250,15,244" onmouseover="imageDesc('Upper Rio Grande','images/upperRioGrandeMap.png')" onmouseout="imageDesc('Region','images/TexasEdit.png')" href="upperRioGrande.html" />
+				<area shape="poly" coords="260,333,384,333,383,322,416,322,416,340,425,351,429,351,432,347,445,356,446,361,452,356,458,362,458,364,467,367,481,360,482,362,486,364,490,368,503,368,506,371,509,371,516,381,512,384,515,390,516,389,530,401,530,415,530,414,525,410,524,411,525,416,521,416,521,408,518,408,517,411,513,414,514,417,516,419,516,423,520,423,519,425,519,427,519,429,522,430,518,431,517,432,515,433,514,430,512,430,509,425,506,425,504,429,504,432,507,435,506,437,506,440,503,440,503,438,503,436,489,441,482,447,483,451,494,450,495,449,488,458,485,458,484,456,471,456,470,457,471,460,472,462,479,466,477,470,477,472,481,472,480,474,474,485,473,480,471,480,470,480,470,486,466,485,465,483,461,480,458,481,460,486,457,487,458,490,470,493,473,493,473,495,471,496,471,502,469,503,468,504,467,504,467,509,472,518,472,520,473,529,473,533,474,536,477,538,477,543,481,550,483,551,483,556,477,559,477,562,476,562,465,553,456,552,454,550,446,550,446,551,442,551,441,550,435,550,435,549,433,547,429,546,426,543,422,543,419,541,415,541,413,541,408,535,399,533,394,532,394,529,393,529,391,527,388,518,386,517,384,510,380,507,379,504,377,501,376,501,376,490,373,487,372,486,372,484,373,479,373,476,370,470,362,467,358,463,356,461,354,459,352,452,349,450,347,448,344,443,341,441,337,439,335,436,334,436,333,434,332,431,330,430,330,424,327,422,327,419,324,416,321,412,321,410,320,409,318,403,316,402,316,398,315,395,311,390,308,386,304,382,302,382,300,380,298,378,296,375,295,374,293,373,291,372,286,371,285,370,285,366,283,364,279,364,277,358,273,357,268,356,267,357,267,359,262,357,260,356" onmouseover="imageDesc('South Texas','images/southTexasMap.png')" onmouseout="imageDesc('Region','images/TexasEdit.png')" href="southTexas.html" />
+				<area shape="poly" coords="349,108,351,109,362,120,368,120,370,116,373,120,377,119,379,116,386,121,387,128,400,128,405,132,417,131,425,136,431,132,440,133,443,139,449,140,449,142,448,142,448,144,454,147,462,141,466,141,469,145,472,145,473,167,450,167,450,190,425,189,425,192,419,192,418,194,418,217,423,217,423,227,419,228,419,231,431,247,434,245,435,245,437,250,425,257,422,256,417,257,411,257,408,260,407,263,397,269,393,269,390,270,386,269,384,270,381,271,378,271,376,269,373,270,370,270,369,269,365,268,362,264,337,263,336,237,290,237,289,237,289,194,295,193,295,170,348,171,347,146,322,146,322,123,348,123" onmouseover="imageDesc('North West','images/northWestMap.png')" onmouseout="imageDesc('Region','images/TexasEdit.png')" href="northWest.html" />
+				<area shape="poly" coords="475,169,475,148,478,149,483,146,484,147,487,145,485,151,489,154,493,154,495,152,495,149,499,146,500,143,502,143,503,147,507,147,507,149,514,148,514,145,516,145,516,147,523,151,526,151,530,155,533,155,534,153,537,153,542,148,547,148,550,146,554,148,553,189,551,189,549,192,548,194,547,197,543,198,543,222,525,222,525,226,531,228,541,237,542,240,543,240,543,242,522,251,512,250,504,237,500,237,494,227,490,227,471,233,466,230,437,245,433,242,431,243,421,230,425,228,425,214,420,214,420,194,427,194,428,191,452,192,452,169,453,169" onmouseover="imageDesc('Metroplex','images/metroplexMap.png')" onmouseout="imageDesc('Region','images/TexasEdit.png')" href="metroplex.html" />
+				<area shape="poly" coords="644,243,621,243,623,249,598,249,597,254,602,267,600,270,596,270,590,263,585,262,579,262,576,264,568,264,564,266,563,266,564,262,562,259,560,259,556,256,554,254,551,253,550,251,544,234,534,226,544,226,545,222,545,200,551,200,551,193,555,193,556,190,556,179,557,180,557,147,560,147,560,145,565,145,568,143,569,145,573,145,575,146,576,147,581,147,582,144,585,144,587,142,590,142,593,145,595,145,597,147,599,147,604,152,629,162,644,162" onmouseover="imageDesc('Upper East','images/upperEastMap.png')" onmouseout="imageDesc('Region','images/TexasEdit.png')"  href="upperEast.html" />
+				<area shape="poly" coords="626,252,623,245,646,244,649,248,651,249,657,260,656,261,655,265,661,269,664,276,664,280,667,283,668,286,669,288,670,292,668,294,668,297,670,297,669,300,668,300,668,306,666,307,666,310,664,310,660,318,661,319,661,323,659,327,661,332,661,344,654,346,654,349,649,356,654,362,643,362,632,367,632,355,631,353,627,350,627,341,624,339,618,339,613,321,612,320,602,320,590,326,587,326,583,323,582,308,583,308,583,301,579,299,579,297,577,296,577,292,575,290,573,291,566,296,566,294,568,292,566,289,562,289,562,284,563,281,566,278,566,275,562,271,563,269,565,268,574,266,581,265,584,265,590,266,593,272,596,273,598,273,605,268,605,265,602,262,602,255,600,253,600,251,625,251" onmouseover="imageDesc('South East', 'images/southEastMap.png')" onmouseout="imageDesc('Region','images/TexasEdit.png')" href="southEast.html" />
+				<area shape="poly" coords="629,368,625,370,619,367,612,369,612,367,615,367,613,358,612,357,608,357,605,358,603,363,595,357,592,357,596,364,597,372,599,376,603,379,602,381,599,382,594,387,589,388,588,392,585,397,579,403,564,411,557,412,553,412,549,415,540,416,538,418,538,416,542,408,537,414,533,415,533,400,516,386,520,380,506,366,519,350,518,345,541,345,541,336,559,335,557,303,567,300,574,295,578,303,580,303,579,323,588,330,605,323,610,323,617,342,624,342,624,354,628,354" onmouseover="imageDesc('Gulf Coast','images/gulfCoastMap.png')" onmouseout="imageDesc('Region','images/TexasEdit.png')" href="gulfCoast.html" />
+				<area shape="poly" coords="466,233,471,236,476,233,492,229,499,239,503,240,510,252,522,254,543,244,546,246,546,250,548,250,548,253,560,264,560,271,564,277,561,280,560,284,559,288,559,291,564,291,564,298,560,298,554,301,557,333,540,334,538,337,538,342,534,342,532,340,525,342,516,343,517,349,503,364,491,365,481,358,468,364,464,364,453,353,448,357,446,356,446,354,432,344,426,348,419,340,419,320,417,319,400,319,400,298,393,297,393,272,399,270,409,263,409,260,412,259,423,258,424,260,440,251,439,246" onmouseover="imageDesc('Central Texas','images/centralTexasMap.png')" onmouseout="imageDesc('Region','images/TexasEdit.png')" href="centralTexas.html" />
+			</map>
+		</div>
+
+		<br>
+
+		<h1>Or</h1>
+
+		<br>
+
+		<!-- ---------------Search by Stat------------- -->
+		<div class="blackArkContainer">Search by Stat</div>		
+
+		<br>
+
+		<div class="blackContainer">
+			<table>
+
+			<tr>
+				
+				<th><h2>Offense</h2></th>
+				<th><h2>Defense</h2></th>
+				
+			</tr>
+			
+			<tr>
+				<th>
+				<input type="button" class="statBtn" value= "PASSING YARDS" onclick="homepage()">
+				</th>
+				<th>
+				<input type="button" class="statBtn" value= "TACKLES" onclick="homepage()">
+				</th>
+			</tr>
+			<tr>
+                                <th>
+                                <input type="button" class="statBtn" value= "TOUCHDOWNS" onclick="homepage()">
+                                </th>
+                                <th>
+                                <input type="button" class="statBtn" value= "INTERCEPTIONS" onclick="homepage()">
+                                </th>
+                        </tr>
+                        <tr>
+                                <th>
+                                <input type="button" class="statBtn" value= "RUSHING YARDS" onclick="homepage()">
+                                </th>
+                                <th>
+                                <input type="button" class="statBtn" value= "SACKS" onclick="homepage()">
+                                </th>
+                        </tr>
+                        <tr>
+                                <th>
+                                <input type="button" class="statBtn" value= "SCORING" onclick="homepage()">
+                                </th>
+                                <th>
+                                <input type="button" class="statBtn" value= "FUMBLES FORCED" onclick="homepage()">
+                                </th>
+                        </tr>
+                        <tr>
+                                <th>
+                                <input type="button" class="statBtn" value= "RECIEVING YARDS" onclick="homepage()">
+                                </th>
+                        </tr>
+
+
+			
+
+			</table>		
+		
+		
+		</div>
+
+                <br>
+
+                <!-- ---------------Highlights------------- -->
+                <div class="blackArkContainer">Highlights</div>
+
+                <br>
+
+                <div class="blackContainer">
+		Test
+		</div>
+
+
+	</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title> School Sign Up </title>
+		<link rel="stylesheet" type="text/css" href="css/cssSignIn.css">
+
+	</head>
+
+	<header>
+		School Sign Up
+	</header>
+
+	<body>
+		<table class="container">
+		
+			<tr>
+				<!-- SIGN IN CREDENTIALS -->
+				<h3>
+				Each school has one username and password. Administrators will share username and password. 
+				</h3>
+				 <br> 
+				<input class ="placeholder" placeholder= "Username" type="Email" name= "email">
+				<br><br>
+				<input class="placeholder" placeholder= "Password" type="password" name="password">
+				<br><br>
+				<input class="placeholder" placeholder= "Retype Password" type="password">
+				<br><br><br>
+			</tr>
+
+			<tr>
+				<!-- SCHOOL INFO -->
+				<input class="placeholder" placeholder= "School Name" name="rSchoolName">
+				<br><br>
+				<input class="placeholder"  placeholder= "School Location" name="location">
+				<br><br>
+				<input class="placeholder" placeholder= "Desired Contact Number" name="contact">
+				<br>
+			</tr>
+			
+			<tr>
+				<h2>Select School Sports: <br></h2>
+				<input class="sportSelection" type="checkbox" id="football"><label for="football"><span>Football</span></label>
+				<input class="sportSelection" type="checkbox" id="track"><label for="track"><span>Track</span></label>
+				<input class="sportSelection" type="checkbox" id="baseball"><label for="baseball"><span>Baseball</span></label>
+				<input class="sportSelection" type="checkbox" id="volleyball"><label for="volleyball"><span>Volleyball</span></label>
+				<br><br><br>
+			</tr>
+			
+			<tr>
+				<input type="button" class="signUpBtn" value= "SIGN UP" onclick="homepage()">
+				<br>
+	                	<button class="goBack" onclick="whoAreYou()"><span>Go Back</span></button>
+			</tr>
+	
+		</table>
+	
+	</body>
+
+	<script src="js/main.js"></script>
+
+</html>

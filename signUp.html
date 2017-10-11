@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title> Recruiter Sign Up </title>
+		<link rel="stylesheet" type="text/css" href="css/cssSignIn.css">
+
+	</head>
+
+	<header>
+		Sign Up
+	</header>
+
+	<body>
+		<table class="container">
+		
+			<tr>
+				<!-- SIGN IN CREDENTIALS -->
+				<input class ="placeholder" placeholder= "Username" type="Email" name= "email">
+				<br><br>
+				<input class="placeholder" placeholder= "Password" type="password" name="password">
+				<br><br>
+				<input class="placeholder" placeholder= "Retype Password" type="password">
+				<br><br><br>
+			</tr>
+
+			<tr>
+				<!-- SCHOOL INFO AND PAYMENT -->
+				<input class="placeholder" placeholder= "School Name" name="rSchoolName">
+				<br><br>
+				<input class="placeholder"  placeholder= "School Location" name="location">
+				<br>
+			</tr>
+			
+			<tr>
+				<h3> You have selected: <h4 onLoad="getCookie()"></h4></h3>
+				<br>
+			</tr>
+
+			<tr>			
+				<!-- PAYMENT -->
+				<h2>Payment</h2>
+				<input class="placeholder" placeholder= "Name on Card" name="cardName">
+				<br><br>
+				<input class="placeholder"  placeholder= "Card Number" name="cardNumber" type=integer>
+				<br><br>
+				<input class="placeholder" placeholder= "Expiration Date" type="date" name="expDate">
+				<br><br><br>
+			</tr>			
+
+			<tr>
+				<input type="Button" class="signUpBtn" value= "SIGN UP" onclick="homepage()">
+				<br>
+	                	<button class="goBack" onclick="selectPackage()"><span>Go Back</span></button>
+			</tr>
+	
+		</table>
+	
+	</body>
+
+	<script src="js/main.js"></script>
+
+</html>
