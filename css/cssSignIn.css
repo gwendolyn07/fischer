@@ -1,0 +1,155 @@
+body {
+	background-color: black;
+	text-align: center;
+}
+
+header{
+
+	color: white;
+	font-size: 75px;
+	text-align: center;
+	margin: 5% 0 5% 0;
+}
+
+h2{
+	color: white;
+	text-align: center;
+}
+
+h3{
+	color: white;
+}
+
+h4{
+	color: white;
+}
+
+.container{
+	width: auto;
+	margin: 5% auto auto auto;
+	background-color: transparent;
+}
+
+.container, tr{
+	width: auto;
+	text-align: center;
+	color: white;
+}
+
+.placeholder {
+	width: 700px;
+	padding: 20px 0 20px 0;
+	background: black;
+	color: white;
+	font-size: 20px;
+	color: white;
+	display: inline-block;
+
+}
+
+input,input::-webkit-input-placeholder {
+	font-size: 20px;
+	line-height: 3;
+}
+
+
+/*GO BACK BUTTON (SIGNUP PAGE)*/
+.goBack{
+	display: inline-block;
+	background-color: white;
+	border: none;
+	border-radius: 4px;
+	color: #333399;
+	text-align: center;
+	width: auto;
+	font-size: 20px;
+	padding:2% 1% 2% 1%;
+	margin-top: 1%;
+}
+
+.goBack span{
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+.goBack span:after{
+	content: '\00bb';
+	position: absolute;
+	left: -20px;
+	transition: 0.5s;
+}
+
+.goBack:hover span {
+	padding-left: 25px;
+}
+
+.goBack:hover span:after{
+	opacity:0;
+	left:0;
+}
+
+/*END GO BACK BUTTON */
+
+
+
+.signUpBtn {
+	background-color: #333399;
+	border: none;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+	border-radius:4px;
+	width: 700px;
+	-webkit-transition-duration: 0.4s;
+	transition-duratoin: 0.4s;
+
+}
+
+.signUpBtn:hover{
+	background-color: #7979d2;
+
+}
+
+
+
+
+
+/* Sport Checkboxes */
+
+label{
+	color: white;
+	margin: 2% 2% 2% 0;
+}
+
+.sportSelection{
+	display: inline-block;
+}
+
+/*
+.sportSelection:checked + label:before{
+	border-top: 2px solid-transparent;
+	border-left: 2px solid-transparent;
+	border-right: 2px solid blue;
+	border-bottom: 2px solid blue;
+
+
+	-webkit-transform: rotate(40deg);
+	-moz-transform: rotate(40deg);
+	-ms-transform: rotate(40deg);
+	-o-transform: rotate(40deg);
+	transform: rotate(40deg);
+
+	-webkit-backface-visibility: hidden;
+
+	-webkit-transform-origin: 100% 100%;
+	-moz-transform-origin: 100% 100%;
+	-ms-transform-origin: 100% 100%;
+	-o-transform-origin: 100% 100%;
+	transform-origin: 100% 100%;
+}
+
+*/
