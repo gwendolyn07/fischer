@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title> UR-Home </title>
+		<link rel="stylesheet" type= "text/css" href="css/home.css">
+
+	</head>
+
+	<blackBar>
+        </blackBar>
+        <blueBar>
+        </bluebar>
+	
+	<h3> 
+		<input type="button" value= "Log Out" onclick="signIn()" class="LOButton">
+	</h3>
+
+	<br>
+
+	<header>
+		<img src="images/logo.png" class="logo">
+
+
+		<div class="topnav" id="topnav">
+                	<a href="homepage.html">Home</a>
+                       	<a href="football.html">Football</a>
+                        <a href="#Basketball">Basketball</a>
+                        <a href="#Track">Track</a>
+			<a href="#Volleyball">Volleyball</a>
+			<a href="#Baseball">Baseball</a>
+			<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="relativeNav()">&#9776;</a>
+		</div>
+	</header>
+
+        <body>
+		
+		<br><br><br>
+
+		<div class = "blackArkContainer">
+		Saved Players
+		</div>
+		
+		<br>
+		
+		<div class = "blackContainer" id="savedPlayers">
+		test
+		</div>
+
+		<br><br><br>
+
+		<div class="blackArkContainer">
+		Video Highlights
+		</div>
+
+		<br>
+		
+		<div class="blackContainer" id="videoHighlights">
+		test
+		</div>
+
+
+	</body>
+
+
+</html>
+
+
+        <script src="js/main.js">
+                function relativeNav() {
+                        var x = document.getElementById("myTopnav");
+                        if(x.className === "topnav") {
+                                x.className += " responsive";
+                        } else {
+                                x.className = "topnav";
+                        }
+                }
+        </script>
+
