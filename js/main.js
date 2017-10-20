@@ -34,13 +34,31 @@ function imageDesc(text,image){
 }
 
 
-function setCookie(package) {
+function setPackageCookie(package) {
 	var d = new Date();
 	d.setTime(d.getTime() + (7*24*60*60*1000));
 	var expires = "expires=" + d.toGMTString();
 	document.cookie = "urPackage="  + package + ";" + expires + ";path=/";
 
         window.location.assign("signUp.html");
+}
+
+function setSport(sport){
+	var d = new Date();
+        d.setTime(d.getTime() + (7*24*60*60*1000));
+        var expires = "expires=" + d.toGMTString();
+        document.cookie = "urSport="  + sport + ";" + expires + ";path=/";
+}
+
+function setGender(gender, chosenSport){
+        var d = new Date();
+        d.setTime(d.getTime() + (7*24*60*60*1000));
+        var expires = "expires=" + d.toGMTString();
+        document.cookie = "sportGender="  + gender + ";" + expires + ";path=/";
+//This should retrieve the cookie set sport to move to results
+//you want a function that reads cookie
+//then use that value to move to page: sport + ".html"
+        window.location.assign(chosenSport);
 
 }
 
