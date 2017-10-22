@@ -50,21 +50,26 @@ function setSport(sport){
         document.cookie = "urSport="  + sport + ";" + expires + ";path=/";
 }
 
-function setGender(gender, chosenSport){
+function setGenderCookie(gender){
+	//sets cookie
         var d = new Date();
         d.setTime(d.getTime() + (7*24*60*60*1000));
         var expires = "expires=" + d.toGMTString();
         document.cookie = "sportGender="  + gender + ";" + expires + ";path=/";
-//This should retrieve the cookie set sport to move to results
-//you want a function that reads cookie
-//then use that value to move to page: sport + ".html"
-        window.location.assign(chosenSport);
+
+	//gets sport for next page in a cookie
+	var sportSelected = getCookie("urSport");
+	var site = sportSelected + ".html";
+
+	//changes page
+        window.location.assign(site);
 
 }
 
 
-function getCookie() {
-	var name = "urPackage=";
+//Grabs cookies when given name
+function getCookie(name) {
+	var name = name + "=";
 	var decodedCookie = decodeURIComponent(document.cookie);
 	var ca = decodedCookie.split(';');
 	for (var i = 0; i < ca.length; i++) {
@@ -77,4 +82,10 @@ function getCookie() {
 		}
 	}
 	return "";
+}
+
+function displayCookie(id,cookieName) {
+	var cookie = getCookie(cookieName);
+	alert(cookie);
+        //document.getElementById(id).innerHTML= cookie + " ";
 }
