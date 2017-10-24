@@ -4,7 +4,7 @@
 
 	<head>
 		<title> Recruiter Sign Up </title>
-		<link rel="stylesheet" type="text/css" href="css/cssSignIn.css">
+		<link rel="stylesheet" type="text/css" href="../css/cssSignIn.css">
 
 	</head>
 
@@ -12,7 +12,7 @@
 		Sign Up
 	</header>
 
-	<body>
+	<body onload="displayCookie('display','urPackage')">
 		<table class="container">
 		
 			<tr>
@@ -34,7 +34,7 @@
 			</tr>
 			
 			<tr>
-				<h3> You have selected: <h4 onLoad="getCookie()"></h4></h3>
+				<h3> You have selected: <h4 id="display"></h4></h3>
 				<br>
 			</tr>
 
@@ -59,6 +59,6 @@
 	
 	</body>
 
-	<script src="js/main.js"></script>
+	<script src="../js/main.js"></script>
 
 </html>

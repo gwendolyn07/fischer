@@ -2,6 +2,8 @@ function homepage(){
 	window.location.assign("homepage.html")
 }
 
+//This function is used in all pages
+//needs an absolute path
 function signIn(){
 	window.location.assign("index.html")
 }
@@ -11,7 +13,7 @@ function rSignUp(){
 }
 
 function selectPackage(){
-	window.location.assign("packageOptions.html")
+	window.location.assign("recruiter/packageOptions.html")
 }
 
 function whoAreYou(){
@@ -84,8 +86,8 @@ function getCookie(name) {
 	return "";
 }
 
+//display cookie
 function displayCookie(id,cookieName) {
 	var cookie = getCookie(cookieName);
-	alert(cookie);
-        //document.getElementById(id).innerHTML= cookie + " ";
+        document.getElementById(id).innerHTML= cookie + " ";
 }
