@@ -5,7 +5,9 @@ function homepage(){
 //This function is used in all pages
 //needs an absolute path
 function signIn(){
-	window.location.assign("index.html")
+	if (window.location.path != "var/www/html/recruiter/*") {
+		window.location.assign("index.html")
+	} else window.location.assign("../index.html")
 }
 
 function rSignUp(){

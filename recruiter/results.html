@@ -3,8 +3,8 @@
 <html>
 
 	<head>
-		<title> UR-Home </title>
-		<link rel="stylesheet" type= "text/css" href="../css/cssHome.css">
+		<title> UR-Home</title>
+		<link rel="stylesheet" type= "text/css" href="../css/home.css">
 
 	</head>
 
@@ -14,22 +14,26 @@
         </bluebar>
 
 	<h3> 
-		<input type="button" value= "Log Out" onclick="signIn()" class="LOButton">
+		<input type="button" value="Log Out" class="LOButton" onclick="location.href='../index.html';">
 	 </h3>
+	
+	<br>
 
 	<header>
-               <div class = "logo">
-                <img src="../images/logo.png">
-                </div>
+ 		
+		<!-- Logo -->
+		<a href="homepage.html">             
+	        	<img src="../images/logo.png" class="logo">
+		</a>
 
-                <br>
-
-                <div class="topnav" id="myTopnav">
-                       <a href="homepage.html">Home</a>
+                <div class="topnav" id="myTopnav2">
+                       <a class="active" href="homepage.html" onclick="checkCookie()">Home</a>
                        <a href="football.html">Football</a>
-                       <a href="#Basketball">Basketball</a>
-                       <a href="#Track">Track</a>
-                       <a href="#Volleyball">Volleyball</a>
+                       <a href="gender.html" onclick="setSport('basketball')">Basketball</a>
+                       <a href="gender.html" onclick="setSport('track')">Track</a>
+                       <a href="volleyball.html">Volleyball</a>
+			<a href="baseball.html">Baseball</a>
+			<a href="softball.html">Softball</a>
 			<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="relativeNav()">&#9776;</a>
                 </div>
 
@@ -48,30 +52,25 @@
 	</header>
 
         <body>
-		
 		<br><br><br>
+	
+		<div class="blackArkContainer">Saved Players</div>
 
-		<div class = "blackArkContainer">
-		Results
-		</div>
-		
 		<br>
-		
-		<div class = "blackContainer" id="savedPlayers">
-		test
-		</div>
 
-		<br><br><br>
-
-		<div class="blackArkContainer">
+		<div class="blackContainer">
+			test
 		</div>
 
 		<br>
-		
-		<div class="blackContainer" id="videoHighlights">
+
+		<div class="blackArkContainer">Video Highlights</div>		
+
+		<br>
+
+		<div class="blackContainer">
 		test
 		</div>
-
 
 	</body>
 
