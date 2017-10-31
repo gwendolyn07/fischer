@@ -8,52 +8,8 @@
 
 	</head>
 
-	 <blackBar>
-        </blackBar>
-        <blueBar>
-        </bluebar>
-
-	<h3> 
-		<input type="button" value="Log Out" class="LOButton" onclick="location.href='../index.html';">
-	 </h3>
-	
-	<br>
-
-	<header>
-
-
-		<!-- Logo -->
-		<a href="homepage.html">              
-	        	<img src="../images/logo.png" class="logo">
-		</a>
-
-
-
-		<!-- Nav Bar -->
-                <div class="topnav" id="myTopnav2">
-                       <a href="homepage.html">Home</a>
-                       <a href="football.html">Football</a>
-                       <a href="gender.html" onclick="setSport('basketball')">Basketball</a>
-                       <a href="gender.html" onclick="setSport('track')">Track</a>
-                       <a class="active" href="volleyball.html">Volleyball</a>
-			<a href="baseball.html">Baseball</a>
-			<a href="softball.html">Softball</a>
-			<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="relativeNav()">&#9776;</a>
-                </div>
-
-		<script src="../js/main.js"></script>
-                <script>
-                        function relativeNav() {
-                                var x = document.getElementById("myTopnav");
-                                if(x.className === "topnav") {
-                                        x.className += " responsive";
-                                } else {
-                                        x.className = "topnav";
-                                }
-                        }
-                </script>
-
-	</header>
+	<div id="top-placeholder">
+	</div>
 
         <body>
 		<h1> Search for Players </h1>
@@ -187,5 +143,33 @@
 
 
 	</body>
+        <script src="http://code.jquery.com/jquery.min.js"></script>
+        <script>
+                        $.get("top.html", function(data){
+                                $("#top-placeholder").replaceWith(data);
+                        });
+        </script>
+
+
+
+        <!-- This will make the active class highlight -->
+        <script src="JavaScript/jquery-1.10.2.js" type="text/javascript"></script>
+
+        <script>
+                $(function(){
+                     <!-- Grabs url from address bar -->
+                     var url = window.location.href;
+
+                     <!-- passes on every "a" tag -->
+                     $(".topnav a").each(function() {
+                             <!-- checks if its the same on the address bar -->
+                             if(url == (this.href)) {
+                                     $(this).closest("a").addClass("active");
+                             }
+                     });
+                });
+         </script>
+
+
 
 </html>
