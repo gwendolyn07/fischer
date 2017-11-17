@@ -27,23 +27,21 @@
         <script>
 
 
-                         function relativeNav() {
-                                var x = document.getElementById("myTopnav");
-                                if(x.className === "topnav") {
-                                        x.className += " responsive";
-                                } else {
-                                        x.className = "topnav";
-                                }
-                        };
+ 	       function relativeNav() {
+        	       var x = document.getElementById("myTopnav");
+                       if(x.className === "topnav") {
+                 	      x.className += " responsive";
+                       } else {
+                   	      x.className = "topnav";
+                       }
+               };
 
                       <!-- This pulls navigation to page -->
-                        $.get("navigation.html", function(data){
-                                $("#nav-placeholder").replaceWith(data);
-                        });
+               $.get("navigation.html", function(data){
+			$("#nav-placeholder").replaceWith(data);
+               });
 
-                        document.getElementById("demo").innerHTML = "This is the page: <br>" + window.location.href;
-
-	       </script>
+       </script>
 
 
 

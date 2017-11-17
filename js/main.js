@@ -30,6 +30,7 @@ function writeText(text){
 	document.getElementById("desc").innerHTML= text;
 }
 
+//used for imagemap 
 function imageDesc(text,image){
 	document.getElementById("desc").innerHTML= text;
 
@@ -47,6 +48,7 @@ function setPackageCookie(package) {
         window.location.assign("signUp.html");
 }
 
+//sets sport cookie
 function setSport(sport){
 	var d = new Date();
         d.setTime(d.getTime() + (7*24*60*60*1000));
