@@ -3,25 +3,33 @@
 <html>
 
 	<head>
-		<title> School Sign Up </title>
+		<title> Athlete Sign Up </title>
 		<link rel="stylesheet" type="text/css" href="../css/cssSignIn.css">
 
 	</head>
 
 	<header>
-		School Sign Up
+		Athlete Sign Up
 	</header>
 
 	<body>
+	<form action="insertPlayer2.php" method="post">	
 		<table class="container">
 		
 			<tr>
 				<!-- SIGN IN CREDENTIALS -->
 				<h3>
-				Each school has one username and password. Administrators will share username and password. 
+				Your username will always be your schoolID + schoolCode. 
 				</h3>
 				 <br> 
-				<input class ="placeholder" placeholder= "Username" type="Email" name= "email">
+				<input class ="placeholder" placeholder= "HighSchool ID">
+				<br>
+                                <input class ="placeholder" placeholder= "Student ID">
+
+				<br><br><br>
+				<input class ="placeholder" placeholder= "First Name">
+				<br><br>
+                                <input class ="placeholder" placeholder= "Last Name">
 				<br><br>
 				<input class="placeholder" placeholder= "Password" type="password" name="password">
 				<br><br>
@@ -30,17 +38,23 @@
 			</tr>
 
 			<tr>
-				<!-- SCHOOL INFO -->
-				<input class="placeholder" placeholder= "School Name" name="rSchoolName">
+                                <input class="sportSelection" type="checkbox" id="Male"><label for="Male"><span>Male</span></label>
+                                <input class="sportSelection" type="checkbox" id="Female"><label for="Female"><span>Female</span></label>
 				<br><br>
-				<input class="placeholder"  placeholder= "School Zip Code" name="location">
+				<input class="placeholder" placeholder= "Birthdate">
 				<br><br>
-				<input class="placeholder" placeholder= "Desired Contact Number" name="contact">
+				<input class="placeholder"  placeholder= "Graduation Date">
+				<br><br>
+				<input class="placeholder" placeholder= "Height in inches">
+				 <br><br>
+                                <input class="placeholder"  placeholder= "Weight">
+
 				<br>
 			</tr>
 			
 			<tr>
-				<h2>Select School Sports: <br></h2>
+				<br><br>
+				<h2>Select Sports: <br><br></h2>
 				<input class="sportSelection" type="checkbox" id="football"><label for="football"><span>Football</span></label>
 				<input class="sportSelection" type="checkbox" id="track"><label for="track"><span>Track</span></label>
 				<input class="sportSelection" type="checkbox" id="baseball"><label for="baseball"><span>Baseball</span></label>
@@ -59,6 +73,7 @@
 	
 		</table>
 	
+	</form>
 	</body>
 
 	<script src="../js/main.js"></script>

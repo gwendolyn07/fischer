@@ -1,0 +1,47 @@
+        <blackBar>
+        </blackBar>
+        <blueBar>
+        </bluebar>
+
+        <h3>
+                <input type="button" value="Log Out" class="LOButton" onclick="location.href='../index.html';">
+         </h3>
+
+        <br>
+
+        <header>
+
+                <!-- Logo -->
+                <a href="homepage.html">
+                        <img src="../images/logo.png" class="logo">
+                </a>
+
+                <!-- Navigation -->
+                <div id="nav-placeholder">
+                </div>
+
+        </header>
+
+        <!-- This makes the navigation work -->
+        <script src="http://code.jquery.com/jquery.min.js"></script>
+        <script>
+
+
+ 	       function relativeNav() {
+        	       var x = document.getElementById("myTopnav");
+                       if(x.className === "topnav") {
+                 	      x.className += " responsive";
+                       } else {
+                   	      x.className = "topnav";
+                       }
+               };
+
+                      <!-- This pulls navigation to page -->
+               $.get("navigation.html", function(data){
+			$("#nav-placeholder").replaceWith(data);
+               });
+
+       </script>
+
+
+

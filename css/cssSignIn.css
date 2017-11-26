@@ -125,6 +125,7 @@ input,input::-webkit-input-placeholder {
 label{
 	color: white;
 	margin: 2% 2% 2% 0;
+	font-size: 150%;
 }
 
 .sportSelection{
