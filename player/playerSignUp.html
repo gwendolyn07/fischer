@@ -13,7 +13,7 @@
 	</header>
 
 	<body>
-	<form action="insertPlayer2.php" method="post">	
+	<form action="insertPlayer.php" method="post">	
 		<table class="container">
 		
 			<tr>
@@ -22,28 +22,28 @@
 				Your username will always be your schoolID + schoolCode. 
 				</h3>
 				 <br> 
-				<input class ="placeholder" placeholder= "HighSchool ID">
+				<input class ="placeholder" placeholder= "HighSchool ID" id="hsID" name="hsID">
 				<br>
-                                <input class ="placeholder" placeholder= "Student ID">
+                                <input class ="placeholder" placeholder= "Student ID" id="sID" name="sID">
 
 				<br><br><br>
-				<input class ="placeholder" placeholder= "First Name">
+				<input class ="placeholder" placeholder= "First Name" id="firstName" name="firstName">
 				<br><br>
-                                <input class ="placeholder" placeholder= "Last Name">
+                                <input class ="placeholder" placeholder= "Last Name" id="lastName" name="lastName">
 				<br><br>
-				<input class="placeholder" placeholder= "Password" type="password" name="password">
+				<input class="placeholder" placeholder= "Password" type="password" name="password" id="password">
 				<br><br>
 				<input class="placeholder" placeholder= "Retype Password" type="password">
 				<br><br><br>
 			</tr>
 
 			<tr>
-                                <input class="sportSelection" type="checkbox" id="Male"><label for="Male"><span>Male</span></label>
-                                <input class="sportSelection" type="checkbox" id="Female"><label for="Female"><span>Female</span></label>
+                                <input class="sportSelection" type="checkbox" id="Male" name="male" value="M"><label for="Male"><span>Male</span></label>
+                                <input class="sportSelection" type="checkbox" id="Female" name="female" value="F"><label for="Female"><span>Female</span></label>
 				<br><br>
-				<input class="placeholder" placeholder= "Birthdate">
+				<input class="placeholder" placeholder= "Birthdate" id="DOB" name="DOB">
 				<br><br>
-				<input class="placeholder"  placeholder= "Graduation Date">
+				<input class="placeholder"  placeholder= "Graduation Date" id="gradDate" name="gradDate">
 				<br><br>
 				<input class="placeholder" placeholder= "Height in inches">
 				 <br><br>
@@ -68,7 +68,7 @@
 			<tr>
 				<input type="button" class="signUpBtn" value= "SIGN UP" onclick="homepage.html">
 				<br>
-	                	<button class="goBack" onclick="whoAreYou()"><span>Go Back</span></button>
+	                	<button class="goBack" onclick="../recruiter/homepage.html"><span>Click Me</span></button>
 			</tr>
 	
 		</table>
