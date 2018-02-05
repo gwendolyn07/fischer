@@ -26,6 +26,7 @@ function schoolSignUp(){
 	window.location.assign("schoolSignUp.html")
 }
 
+//use to get text and put in somewhere else
 function writeText(text){
 	document.getElementById("desc").innerHTML= text;
 }
@@ -39,6 +40,7 @@ function imageDesc(text,image){
 }
 
 
+//set cookies
 function setPackageCookie(package) {
 	var d = new Date();
 	d.setTime(d.getTime() + (7*24*60*60*1000));
@@ -56,6 +58,7 @@ function setSport(sport){
         document.cookie = "urSport="  + sport + ";" + expires + ";path=/";
 }
 
+//set gender cookie for recruiters
 function setGenderCookie(gender){
 	//sets cookie
         var d = new Date();
@@ -94,4 +97,14 @@ function getCookie(name) {
 function displayCookie(id,cookieName) {
 	var cookie = getCookie(cookieName);
         document.getElementById(id).innerHTML= cookie + " ";
+}
+
+//Password visibility
+function showPswd() {
+    var x = document.getElementById("pswd");
+    if (x.type === "password") {
+        x.type = "text";
+    } else {
+        x.type = "password";
+    }
 }

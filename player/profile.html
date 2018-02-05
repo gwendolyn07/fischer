@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+
+        <head>
+                <title> Profile</title>
+                <link rel="stylesheet" type= "text/css" href="../css/profile.css">
+
+        </head>
+
+
+	<div id="top-placeholder">
+	</div>
+
+        <body>
+		<div class="blackContainer">
+		 <p id="demo"></p>
+			NEED TO MAKE MAP RESPONZIVE
+		</div>
+	</body>
+
+        <script src="js/main.js"></script>
+
+	
+
+	<!-- This makes the navigation work -->
+        <script src="../js/addText.js"></script>
+        <script>
+			$.get("top.html", function(data){
+				$("#top-placeholder").replaceWith(data);
+			});
+	</script>
+
+
+</html>

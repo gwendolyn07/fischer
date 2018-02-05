@@ -46,14 +46,13 @@ table, tr, th{
 /* Coach and Recruiter Buttons on Who Are You page */
 
 .CRBtn{
-	width: 300px;
-	height: 600px;
+	max-width: 400px;
+	height: auto;
 	text-align: center;
 	color: white;
 	background-color: Transparent;
 	border: none;
 	outline: none;
-
 }
 
 .CRBtn:hover{

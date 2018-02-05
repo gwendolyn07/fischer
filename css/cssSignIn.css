@@ -26,6 +26,19 @@ h4{
 	text-transform: uppercase;
 }
 
+h5{
+	color: white;
+	font-size: 300%;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+/* This is the incorrect password and username label */
+.errorLogin{
+	color: red;
+}
+
 .container{
 	width: auto;
 	margin: 5% auto auto auto;
@@ -116,43 +129,49 @@ input,input::-webkit-input-placeholder {
 
 }
 
-
-
-
-
-/* Sport Checkboxes */
-
 label{
 	color: white;
 	margin: 2% 2% 2% 0;
 	font-size: 150%;
 }
 
-.sportSelection{
-	display: inline-block;
+/*Password Validation*/
+/* The message box is shown when the user clicks on the password field */
+#message {
+    display:none;
+    background: #f1f1f1;
+    color: #000;
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
 }
 
-/*
-.sportSelection:checked + label:before{
-	border-top: 2px solid-transparent;
-	border-left: 2px solid-transparent;
-	border-right: 2px solid blue;
-	border-bottom: 2px solid blue;
-
-
-	-webkit-transform: rotate(40deg);
-	-moz-transform: rotate(40deg);
-	-ms-transform: rotate(40deg);
-	-o-transform: rotate(40deg);
-	transform: rotate(40deg);
-
-	-webkit-backface-visibility: hidden;
-
-	-webkit-transform-origin: 100% 100%;
-	-moz-transform-origin: 100% 100%;
-	-ms-transform-origin: 100% 100%;
-	-o-transform-origin: 100% 100%;
-	transform-origin: 100% 100%;
+#message p {
+    padding: 10px 35px;
+    font-size: 18px;
 }
 
-*/
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+    color: green;
+}
+
+.valid:before {
+    position: relative;
+    left: -35px;
+    content: "&#10004;";
+}
+
+/* Add a red text color and an "x" icon when the requirements are wrong */
+.invalid {
+    color: red;
+}
+
+.invalid:before {
+    position: relative;
+    left: -35px;
+    content: "&#10006;";
+}
+
+
+

@@ -13,17 +13,20 @@
 	</header>
 
 	<body>
+	<form name="login" action="login.php" method="POST">
 		<div class ="container">
-			<input class="placeholder" placeholder= "Username" type="Email" name= "email">
+			<label name="desc" id="desc" class="errorLogin"> </label>
+			<br>
+			<input class="placeholder" placeholder= "Username" name= "username" required>
 			<br><br><br>
-			<input class="placeholder" placeholder= "Password" type="password" name="email">
+			<input class="placeholder" placeholder= "Password" type="password" name="password" required>
 			
 			<br><br><br>
-			<input type="button" class="signUpBtn" value= "LOG IN" onclick="location.href='recruiter/homepage.html';">
+			<input type="submit" class="signUpBtn" value= "LOG IN">
 			<br><br><br>
 			<input type="button" class="signUpBtn" value= "SIGN UP" onclick="whoAreYou()">
 		</div>
-	
+	</form>
 	</body>
 
 	<script src="js/main.js"></script>
